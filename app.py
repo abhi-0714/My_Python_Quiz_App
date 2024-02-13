@@ -1,0 +1,27 @@
+from flask import Flask, render_template, request
+
+app = Flask(__name__)
+
+# Define your questions
+questions = [
+    {"question": "What color are apples?", "options": ["Red/Green", "Purple", "Orange"], "answer": "a"},
+    {"question": "What color are bananas?", "options": ["Teal", "Magenta", "Yellow"], "answer": "c"},
+    {"question": "What color are strawberries?", "options": ["Yellow", "Red", "Blue"], "answer": "b"}
+]
+
+@app.route('/')
+def index():
+    return render_template('index.html', questions=questions)
+
+@app.route('/submit', methods=['POST'])
+def submit():
+    score = 0
+    for i, q in enumerate(questions):
+        user_answer = request.form.get(f'question{i+1}')
+        if user_answer == q['answer']:
+            score += 1
+    return f'You got {score}/{len(questions)} correct.'
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
+
