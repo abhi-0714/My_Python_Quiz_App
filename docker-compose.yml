@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  web:
+    image: supriya279/quiz-app-new1:latest
+    ports:
+      - "5000:5000"
+    restart: always
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=development
+
+  db:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    environment:
+      - "MYSQL_ROOT_PASSWORD=test@123"
+
