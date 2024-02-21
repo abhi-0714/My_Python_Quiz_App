@@ -1,8 +1,7 @@
 # Python Quiz App
 
 
-![snap](https://cdn.hashnode.com/res/hashnode/image/upload/v1707847278404/d628ebfe-6f4a-4e80-a02f-9dfd0e2ed753.png?auto=compress,format&format=webp)
-
+![Python-quiz-app](https://cdn.hashnode.com/res/hashnode/image/upload/v1708535887412/a61bc9f5-8892-4d22-8c3e-cf9a602be559.png)
 
 
 
