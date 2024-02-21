@@ -1,14 +1,17 @@
-# Use the official Python image as a base image
+# Use the official Python slim image as a base
 FROM python:3.9-slim
 
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy the Python quiz app files into the container
-COPY . /app
+# Copy only requirements.txt to install dependencies
+COPY requirements.txt .
 
-# Install Flask
-RUN pip install Flask
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the application files into the container
+COPY . .
 
 # Expose port 5000 for web traffic
 EXPOSE 5000
