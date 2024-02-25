@@ -7,7 +7,6 @@ questions = [
     {"question": "What color are apples?", "options": ["Red/Green", "Purple", "Orange"], "answer": "Red/Green"},
     {"question": "What color are bananas?", "options": ["Teal", "Magenta", "Yellow"], "answer": "Yellow"},
     {"question": "What color are strawberries?", "options": ["Yellow", "Red", "Blue"], "answer": "Red"}
-    {"question": What color are mango?", "options": ["Yellow", "Blue", "None"], "answer": "Yellow"}
 ]
 
 @app.route('/')
