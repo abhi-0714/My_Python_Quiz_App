@@ -4,9 +4,9 @@ app = Flask(__name__)
 
 # Define your questions
 questions = [
-    {"question": "What color are apples?", "options": ["Red/Green", "Purple", "Orange"], "answer": "Red/Green"},
-    {"question": "What color are bananas?", "options": ["Teal", "Magenta", "Yellow"], "answer": "Yellow"},
-    {"question": "What color are strawberries?", "options": ["Yellow", "Red", "Blue"], "answer": "Red"}
+    {"question": "In which continent does India lie", "options": ["Asia", "Africa", "Europe"], "answer": "Asia"},
+    {"question": "What OS does Macbook's use?", "options": ["Android", "Mac OS", "Windows"], "answer": "Mac OS"},
+    {"question": "Which company does not manufacture Fridge?", "options": ["Microsoft", "Samsung", "LG"], "answer": "Microsoft"}
 ]
 
 @app.route('/')
