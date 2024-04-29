@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
 </head>
-<body style="background-color: #ffffcc;"> <!-- Slight yellow background -->
-    <h1>Hello! Welcome to the Python Quiz App!</h1>
+<body>
+    <h1>Welcome to New Python Quiz App!</h1>
     <form action="/submit" method="post">
         {% for question in questions %}
             <h2>{{ question.question }}</h2>
@@ -15,7 +15,7 @@
                 {{ option }}<br>
             {% endfor %}
         {% endfor %}
-        <input type="submit" value="Submit" style="background-color: green; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
