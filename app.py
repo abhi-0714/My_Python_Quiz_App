@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 # Define your questions
 questions = [
-    {"question": "In which continent does India lie", "options": ["Asia", "Africa", "Europe"], "answer": "Asia"},
+    {"question": "In which continent does India lie?", "options": ["Asia", "Africa", "Europe"], "answer": "Asia"},
     {"question": "What OS does Macbook's use?", "options": ["Android", "Mac OS", "Windows"], "answer": "Mac OS"},
     {"question": "Which company does not manufacture Fridge?", "options": ["Microsoft", "Samsung", "LG"], "answer": "Microsoft"}
 ]
